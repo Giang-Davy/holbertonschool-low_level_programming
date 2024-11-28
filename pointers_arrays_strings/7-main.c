@@ -1,10 +1,6 @@
 #include "main.h"
 
-/**
- * main - Vérifie le code
- *
- * Return: Toujours 0
- */
+/* Fonction principale pour tester puts_half */
 int main(void)
 {
     char *str;

@@ -1,7 +1,7 @@
 #include <unistd.h>
 
-/* Implémentation de la fonction _putchar */
+/* Fonction pour afficher un caractère */
 int _putchar(char c)
 {
-    return write(1, &c, 1);  /* Utilise la fonction write pour afficher un caractère */
+    return write(1, &c, 1);
 }

@@ -1,40 +1,24 @@
 #include "main.h"
 
-/**
- * puts_half - Affiche la deuxi�aîne de caractères.
- * @str: La chaîne de caractères à traiter.
- *
- * aîne est paire, la fonction affiche la seconde moitié
- * ur est impaire, elle commence à afficher après le
- * premier caractère du milieu.
- */
+/* Fonction qui affiche la deuxième moitié d'une chaîne */
 void puts_half(char *str)
 {
-	int length = 0;
-	int i;
+    int len = 0;
+    int i;
 
-	while (str[length] != '\0')
-	{
-		length++;
-	}
-	if (length % 2 == 0)
-	{
-		if (len % 2 == 0)
-		{
-			i = len / 2;
-		}
-		else
-		{
-			i = (len / 2) + 1;
-		}
-	}
-	else
-	{
-		i = (length - 1) / 2;
-	}
-	for (; str[i] != '\0'; i++)
-	{
-	_putchar(str[i]);
-	}
-	_putchar('\n');
+    /* Calcul de la longueur de la chaîne */
+    while (str[len] != '\0')
+        len++;
+
+    /* Déterminer où commencer l'affichage de la deuxième moitié */
+    if (len % 2 == 0)
+        i = len / 2;
+    else
+        i = (len / 2) + 1;
+
+    /* Afficher la deuxième moitié de la chaîne */
+    for (; str[i] != '\0'; i++)
+        _putchar(str[i]);
+
+    _putchar('\n');
 }
