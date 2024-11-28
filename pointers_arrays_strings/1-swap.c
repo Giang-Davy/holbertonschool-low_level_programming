@@ -5,7 +5,7 @@
  * @a: Pointeur vers le premier entier.
  * @b: Pointeur vers le deuxième entier.
  *
- * Cette fonction échange les valeurs des deux entiers pointés par a et 
+ * Cette fonction échange les valeurs des deux entiers pointés pa
  *
 **/
 void swap_int(int *a, int *b)
