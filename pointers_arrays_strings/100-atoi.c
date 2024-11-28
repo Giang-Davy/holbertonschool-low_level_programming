@@ -16,7 +16,7 @@ int _atoi(char *s)
     /* Convert string to integer */
     while (*s >= '0' && *s <= '9')
     {
-        if (result > (2147483647 - (*s - '0')) / 10)  // Check for overflow
+        if (result > (2147483647 - (*s - '0')) / 10)
         {
             return (sign == 1) ? 2147483647 : -2147483648;
         }
