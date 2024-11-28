@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * reset_to_98 - Met à jour la valeur pointée par n à 98.
  * @n: Un pointeur vers un entier.
