@@ -27,8 +27,10 @@ int main(void)
     new->next = head;
     new->prev = NULL;
     head = new;
-    print_dlistint(head);
+
+    n = print_dlistint(head);  // Remarque l'assignation ici
     printf("-> %lu elements\n", n);
+
     free(new);
     return (EXIT_SUCCESS);
 }
